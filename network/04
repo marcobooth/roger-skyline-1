@@ -1,0 +1,2 @@
+#shows network status, to and from this computer
+netstat -nr | grep default
