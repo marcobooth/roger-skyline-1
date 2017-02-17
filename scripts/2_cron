@@ -1,4 +1,5 @@
 #!/bin/sh
 # - read from standard output
+#TODO check that the permissions on file are ok in /user/local/bin folder
 sudo cp ./2 /usr/local/bin
 (crontab -l ; echo "0 4 * * 1 /usr/local/bin/2")| crontab -
