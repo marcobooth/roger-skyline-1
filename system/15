@@ -1,0 +1,2 @@
+#where n is job number. or jobs -l and kill the process number
+sudo pkill -f tail

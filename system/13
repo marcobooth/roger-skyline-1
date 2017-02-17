@@ -1,0 +1,2 @@
+# a - all users. u - process owner. x - not attached to terminal
+ps aux
