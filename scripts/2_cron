@@ -1,0 +1,4 @@
+#!/bin/sh
+# - read from standard output
+sudo cp ./2 /usr/local/bin
+(crontab -l ; echo "0 4 * * 1 /usr/local/bin/2")| crontab -

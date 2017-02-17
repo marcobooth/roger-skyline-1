@@ -1,0 +1,6 @@
+#!/bin/sh
+#http://askubuntu.com/questions/94102/what-is-the-difference-between-apt-get-update-and-upgrade
+#https://www.cyberciti.biz/faq/linux-redirect-error-output-to-file/
+#create update_script.log in /var/log, chmod 777 update_script.log (not great)
+#http://askubuntu.com/questions/830766/getting-permission-denied-even-when-using-sudo-command
+sudo apt-get update -y > /var/log/update_script.log 2> /var/log/update_script.log && sudo apt-get upgrade -y > /var/log/update_script.log 2> /var/log/update_script.log
