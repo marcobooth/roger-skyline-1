@@ -1,0 +1,3 @@
+# iptables is under sbin, not in normal user's $PATH - need to use sudo
+# http://www.xenoterracide.com/2008/04/iptables-for-average-desktop-user.html
+sudo iptables -P INPUT DROP

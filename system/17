@@ -1,0 +1,2 @@
+# iptables is under sbin, not in normal user's $PATH - need to use sudo
+sudo iptables -L
