@@ -1,1 +1,16 @@
 #!/bin/sh
+CRON_FILE=`cat /etc/crontab`
+CRON_FILE_PATH='/etc/crontab'
+LAST_RECORDED_CRON_FILE="$HOME/scripts/cron.txt"
+if [ ! -e $LAST_RECORDED_CRON_FILE ]; then
+    #quotes around the echo variable are for preserving spacing
+    echo "$CRON_FILE" > $LAST_RECORDED_CRON_FILE
+    exit
+fi
+DIFF=$(diff $CRON_FILE_PATH $LAST_RECORDED_CRON_FILE)
+# -z stands for if string is empty
+if [ -z "$DIFF" ]; then
+    exit
+fi
+echo "hello, the crontab file has changed. You should probably look into that." | mail -s "CRONTAB MODIFIED" root
+echo "$CRON_FILE" > $LAST_RECORDED_CRON_FILE
