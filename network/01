@@ -1,1 +1,2 @@
 ifconfig -l
+#lo0 gif0 stf0 en0 en1 en4 en3 p2p0 awdl0 bridge0

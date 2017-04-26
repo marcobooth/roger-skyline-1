@@ -1,2 +1,2 @@
 # en1 is wifi. Applies to macs with only one ethernet port
-ifconfig en1
+ifconfig en1 ether

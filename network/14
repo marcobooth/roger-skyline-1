@@ -1,2 +1,2 @@
-#host 10.51.1.5 (different in france)
-ns1.42.us.org
+#host 10.51.1.81
+ldap-proxy.42.fr
