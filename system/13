@@ -1,2 +1,4 @@
 # a - all users. u - process owner. x - not attached to terminal
-ps aux
+#ps aux
+#ps is a snapshot while top is interactive
+top

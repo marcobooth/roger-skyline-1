@@ -1,1 +1,2 @@
-sudo tail -f /var/log/syslog > random.log &
+# output should probaly be put in a file ( > random.log )
+sudo tail -f /var/log/syslog &

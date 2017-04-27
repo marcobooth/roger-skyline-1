@@ -1,14 +1,2 @@
 # h - human readable. c - shows total. s - summarize
-#sudo df -sch /var/*
-1.9M  /var/backups
-54M   /var/cache
-4.0K  /var/games
-165M  /var/lib
-4.0K  /var/local
-0     /var/lock
-18M   /var/log
-4.0K  /var/mail
-4.0K  /var/opt
-0     /var/run
-80K   /var/spool
-52K   /var/tmp
+sudo du -sch /var/*
